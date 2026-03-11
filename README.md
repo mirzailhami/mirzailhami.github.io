@@ -1,3 +1,5 @@
+<a href="https://github.com/mirzailhami/mirzailhami.github.io/actions/workflows/deploy.yml"><img src="https://github.com/mirzailhami/mirzailhami.github.io/actions/workflows/deploy.yml/badge.svg?branch=main"></a>
+
 # mirzailhami.github.io
 
 Personal portfolio and blog for Mirza Ilhami, built as a static site and deployed with GitHub Pages.
