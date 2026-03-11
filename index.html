@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="dark" data-dark-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ─── PRIMARY SEO ─────────────────────────── -->
+  <title>Mirza Ilhami — Software Engineer, Senior Lecturer & Researcher</title>
+  <meta name="description" content="Mirza Ilhami — Full Stack Developer, Senior Lecturer at Universitas Mikroskil, and Researcher in AI/ML. 10+ years building software and shaping engineers in Indonesia." />
+  <meta name="keywords" content="Mirza Ilhami, software engineer, IT lecturer, full stack developer, AI researcher, Universitas Mikroskil, BINUS University, mobile development, web development, Indonesia" />
+  <meta name="author" content="Mirza Ilhami" />
+  <link rel="canonical" href="https://mirzailhami.github.io/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+  <!-- ─── OPEN GRAPH (Facebook, LinkedIn) ─────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mirzailhami.github.io/" />
+  <meta property="og:title" content="Mirza Ilhami — Software Engineer, Senior Lecturer & Researcher" />
+  <meta property="og:description" content="Full Stack Developer, Senior Lecturer, and AI/ML Researcher. 10+ years building software and shaping engineers." />
+  <meta property="og:image" content="https://mirzailhami.github.io/assets/og-image.png" />
+  <meta property="og:site_name" content="Mirza Ilhami" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ─── TWITTER CARD ─────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@mirzailhami" />
+  <meta name="twitter:creator" content="@mirzailhami" />
+  <meta name="twitter:title" content="Mirza Ilhami — Software Engineer, Senior Lecturer & Researcher" />
+  <meta name="twitter:description" content="Full Stack Developer, Senior Lecturer, and AI/ML Researcher. 10+ years building software and shaping engineers." />
+  <meta name="twitter:image" content="https://mirzailhami.github.io/assets/og-image.png" />
+
+  <!-- ─── JSON-LD STRUCTURED DATA ──────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mirza Ilhami",
+    "url": "https://mirzailhami.github.io",
+    "image": "https://mirzailhami.github.io/assets/og-image.png",
+    "jobTitle": "Software Engineer & Senior Lecturer",
+    "description": "Full Stack Developer, Senior Lecturer at Universitas Mikroskil, and Researcher in AI & Machine Learning.",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "BINUS University",
+      "url": "https://binus.ac.id"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Universitas Mikroskil",
+      "url": "https://mikroskil.ac.id"
+    },
+    "sameAs": [
+      "https://github.com/mirzailhami",
+      "https://linkedin.com/in/mirzailhami",
+      "https://scholar.google.co.id/citations?user=qRojFF4AAAAJ&hl=en"
+    ],
+    "knowsAbout": ["Software Engineering", "Artificial Intelligence", "Machine Learning", "Mobile Development", "Web Development", "Recommendation Systems"]
+  }
+  </script>
+
+  <!-- GitHub Primer CSS (official GitHub design system) -->
+  <link rel="stylesheet" href="https://unpkg.com/@primer/css@21.0.7/dist/primer.css" />
+  <!-- GitHub's own font stack via CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+
+<!-- ─── NAVBAR ──────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">
+      <img id="navLogo" src="/assets/logo.svg" alt="Mirza Ilhami" class="nav-logo" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/></svg> About</a></li>
+      <li><a href="#research" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"/></svg> Research</a></li>
+      <li><a href="#projects" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg> Projects</a></li>
+      <li><a href="#blog" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm2.096 5.925-2.475-2.474-5.59 5.59L4.1 11.544l.981-.35 5.93-5.843Zm1.414-4.512-.48-.517a.25.25 0 0 0-.354 0L12.61 3.39l2.474 2.475.984-.984a.25.25 0 0 0 0-.354Z"/></svg> Blog</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <a href="#contact" class="nav-icon-btn" title="Contact"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 8.88Z"/></svg></a>
+      <a href="https://github.com/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn" title="GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="https://linkedin.com/in/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .514.526 0 1.175 0h13.65C15.474 0 16 .514 16 1.146v13.708c0 .632-.526 1.146-1.175 1.146H1.175C.526 16 0 15.486 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+      <a href="https://profiles.topcoder.com/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn nav-tc-btn" title="Topcoder"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Topcoder icon</title><path d="M20.514 16.517c.192-.026.376-.112.542-.21.345-.201.646-.473.936-.75.226-.214.444-.436.653-.67.12-.146.256-.296.376-.451.105-.143.21-.285.315-.436.076-.115.15-.23.212-.35.33-.598.601-1.336.361-2.016-.031-.094-.076-.185-.121-.27-.091-.154-.211-.291-.331-.413-.21-.201-.468-.36-.723-.489-.376-.188-.781-.313-1.201-.406-.603-.137-1.205-.201-1.821-.226-.842-.041-1.684-.006-2.512.076.105.109.196.225.301.338.195.226.392.467.571.723.227.3.437.631.647.962.602.992 1.054 2.075 1.383 3.173.105.33.182.662.255 1.008.031.12.048.256.077.391l.08.016zm-18.585-.151c.052-.204.105-.412.16-.616.08-.301.176-.6.266-.896.069-.217.15-.429.227-.645.09-.225.185-.45.277-.676.033-.076.061-.153.098-.23.102-.215.211-.427.322-.637.135-.242.256-.481.391-.707.18-.316.377-.602.586-.888l.016-.015c-.331-.016-.677-.016-1.008-.016-.24 0-.496.016-.736.045-.166.016-.33.031-.496.061-.121.016-.24.045-.361.075-.586.15-1.248.421-1.533 1.007-.031.076-.061.151-.091.242-.032.12-.047.27-.047.406 0 .211.045.421.089.632.091.315.242.617.393.902.285.496.646.962 1.022 1.398l.481.525-.056.033zm18.151-.045c-.492-2.302-1.546-4.532-3.194-6.236l-.083-.086-.041-.04c-.2.014-.399.045-.603.074-2.154.332-4.26.918-6.285 1.715.168.045.336.09.507.15.706.226 1.413.466 2.108.723 2.421.902 4.755 2.029 6.998 3.322l.586.347.007.031zm-17.706-.139l.873-.843c.15-.143.15-.142.301-.28 1.533-1.354 3.318-2.375 5.18-3.217-.275-.076-.549-.136-.824-.195-1.053-.241-2.113-.437-3.188-.527-.084.121-.166.227-.247.346-.181.271-.354.527-.517.813-.15.24-.271.481-.392.723-.104.195-.21.391-.286.586-.029.045-.045.105-.06.15-.091.226-.195.451-.286.677-.074.181-.135.36-.195.541-.09.286-.18.557-.255.843-.046.15-.091.301-.12.45l.016-.067zm6.914-4.587c.21-.091.417-.175.628-.255.233-.094.466-.182.7-.269 1.023-.376 2.061-.692 3.113-.947.873-.211 1.744-.376 2.633-.511l.06-.016c-.241-.226-.496-.421-.752-.617-.481-.36-1.007-.662-1.563-.902-1.295-.556-2.723-.736-4.105-.48-.753.134-1.491.39-2.167.752-1.067.571-2 1.383-2.768 2.315l-.03.016.466.044.572.076c.813.135 1.594.301 2.391.48.301.076.587.151.873.227l-.051.087z"></path></g></svg></a>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner container">
+    <h1 class="hero-name">Mirza<br><span class="accent">Ilhami</span></h1>
+    <p class="hero-subtitle">
+      <strong>Software Engineer</strong> · <strong>Senior Lecturer</strong> · <strong>Researcher</strong>
+    </p>
+    <p class="hero-description">
+      Full stack developer focused on mobile &amp; web technology with 10+ years of engineering experience.
+      Passionate about AI, open-source, and shaping the next generation of engineers as an Informatics lecturer.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-value">10<span>+</span></div>
+        <div class="stat-label">Years Engineering</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">10<span>+</span></div>
+        <div class="stat-label">Years Lecturing</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">AI<span>.</span></div>
+        <div class="stat-label">Current Focus</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">🇮🇩</div>
+        <div class="stat-label">Based in Indonesia</div>
+      </div>
+    </div>
+    <div style="margin-left:-24px;">
+      <img id="lang-stats-img"
+        src="https://github-readme-stats.vercel.app/api/top-langs?hide_title=true&username=mirzailhami&layout=compact&langs_count=8&hide_border=true&card_width=500&theme=transparent"
+        alt="Top Languages"
+        style="max-width:100%;height:auto;display:block;" />
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">About</span>
+      <h2>Who I Am</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm <strong>Mirza Ilhami</strong> — a full stack software engineer, senior lecturer, and technology entrepreneur based in Indonesia. I've spent over a decade building production software across mobile and web platforms, and an equal amount of time teaching and mentoring engineers in the classroom.</p>
+        <p>My current focus is <strong>Artificial Intelligence</strong> — exploring how large language models, AI agents, and machine learning can be applied to real-world engineering challenges.</p>
+        <div class="about-roles">
+          <div class="role-item">
+            <div class="role-icon green">🎓</div>
+            <div class="role-info">
+              <h4>Senior Lecturer — Universitas Mikroskil</h4>
+              <p>Informatics Engineering · 10+ years teaching</p>
+            </div>
+          </div>
+          <div class="role-item">
+            <div class="role-icon purple">🏆</div>
+            <div class="role-info">
+              <h4>Development Copilot — Topcoder (Wipro)</h4>
+              <p>Managing challenges & delivering solutions globally</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tech-section-label">Frameworks &amp; Platforms</div>
+        <div id="frameworks-container" class="tech-grid">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Firebase</span>
+        </div>
+        <div class="tech-section-label">AI &amp; Machine Learning</div>
+        <div id="ai-ml-container" class="tech-grid">
+          <span class="tech-tag">Claude API</span>
+          <span class="tech-tag">AWS Bedrock</span>
+          <span class="tech-tag">LangChain</span>
+          <span class="tech-tag">Llama 3</span>
+        </div>
+        <div class="tech-section-label">Certifications</div>
+        <div class="tech-grid">
+          <span class="tech-tag">IBM DB2 Certified Associate</span>
+          <span class="tech-tag">GitHub Education</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Topcoder Stats Banner -->
+    <div class="topcoder-banner" onclick="window.open('https://profiles.topcoder.com/mirzailhami','_blank')" role="link" tabindex="0" style="cursor:pointer">
+      <div class="topcoder-banner-left">
+        <div class="topcoder-logo">TC</div>
+        <div>
+          <div class="topcoder-name">Topcoder Profile</div>
+          <div class="topcoder-handle">mirzailhami &middot; 6+ Years Active</div>
+        </div>
+      </div>
+      <div class="topcoder-stats">
+        <div class="topcoder-stat">
+          <span class="topcoder-stat-value" id="tc-wins">31</span>
+          <span class="topcoder-stat-label">Challenge Wins</span>
+        </div>
+        <div class="topcoder-stat">
+          <span class="topcoder-stat-value" id="tc-rating">1,485</span>
+          <span class="topcoder-stat-label">Dev Rating</span>
+        </div>
+        <div class="topcoder-stat">
+          <span class="topcoder-stat-value" id="tc-fulfillment">95%</span>
+          <span class="topcoder-stat-label">Fulfillment</span>
+        </div>
+        <div class="topcoder-stat">
+          <span class="topcoder-stat-value" id="tc-projects">22</span>
+          <span class="topcoder-stat-label">Projects Managed</span>
+        </div>
+      </div>
+      <span class="topcoder-cta">View Profile →</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── RESEARCH ──────────────────────────────────────────────── -->
+<section id="research">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Academic</span>
+      <h2>Research & Education</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Education -->
+    <div class="education-card">
+      <div class="edu-logo">🎓</div>
+      <div class="edu-info">
+        <h4>Master of Information Technology</h4>
+        <p>BINUS University (Universitas Bina Nusantara) · Jakarta, Indonesia</p>
+        <span>Graduate · Information Technology</span>
+      </div>
+    </div>
+    <div class="education-card">
+      <div class="edu-logo" style="background: linear-gradient(135deg,#3fb950,#1f6feb);">🏛️</div>
+      <div class="edu-info">
+        <h4>Informatics Engineering Lecturer</h4>
+        <p>Universitas Mikroskil · Medan, Indonesia</p>
+        <span>10+ years · Mobile Development · Web Technology · Software Engineering</span>
+      </div>
+    </div>
+
+    <div style="height:40px"></div>
+
+    <!-- Scholar Profile Stats Banner -->
+    <div class="scholar-banner" onclick="window.open('https://scholar.google.co.id/citations?user=qRojFF4AAAAJ&hl=en','_blank')" role="link" tabindex="0" style="cursor:pointer">
+      <div class="scholar-banner-left">
+        <div class="scholar-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4285f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="scholar-name">Google Scholar Profile</div>
+          <div class="scholar-handle">Mirza Ilhami · Universitas Mikroskil</div>
+        </div>
+      </div>
+      <div class="scholar-stats">
+        <div class="scholar-stat">
+          <span class="scholar-stat-value">19</span>
+          <span class="scholar-stat-label">Citations</span>
+        </div>
+        <div class="scholar-stat">
+          <span class="scholar-stat-value">2,754</span>
+          <span class="scholar-stat-label">Reads</span>
+        </div>
+        <div class="scholar-stat">
+          <span class="scholar-stat-value">2</span>
+          <span class="scholar-stat-label">Featured</span>
+        </div>
+        <span class="scholar-cta">View Profile →</span>
+      </div>
+    </div>
+
+    <div style="height:32px"></div>
+
+    <!-- Publications -->
+    <div class="research-subsection-label">Publications</div>
+
+    <div class="research-card">
+      <div class="research-meta">
+        <span class="research-type journal">Journal Paper</span>
+        <span class="research-year">2016</span>
+      </div>
+      <h3><a href="https://scholar.google.co.id/citations?user=qRojFF4AAAAJ&hl=en" target="_blank" rel="noopener">Improving Collaborative Filtering with Matrix Factorization and Nearest-Neighbour for Film Recommendation</a></h3>
+      <p>Addresses the new user problem and sparsity in collaborative filtering recommendation systems. Proposes a hybrid approach combining matrix factorization with nearest-neighbour algorithms to improve recommendation accuracy for film datasets. Supervised by Suharjito Suharjito at BINUS University.</p>
+      <div class="research-footer">
+        <div class="research-tags">
+          <span class="research-tag">Recommendation Systems</span>
+          <span class="research-tag">Collaborative Filtering</span>
+          <span class="research-tag">Matrix Factorization</span>
+          <span class="research-tag">Machine Learning</span>
+        </div>
+        <a href="https://scholar.google.co.id/citations?user=qRojFF4AAAAJ&hl=en" target="_blank" rel="noopener" class="research-link">View on Scholar →</a>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-meta">
+        <span class="research-type journal">Journal Paper</span>
+        <span class="research-year">2017</span>
+      </div>
+      <h3><a href="https://www.researchgate.net/publication/367733572_Pengenalan_Google_Firebase_Untuk_Hybrid_Mobile_Apps_Berbasis_Cordova" target="_blank" rel="noopener">Pengenalan Google Firebase untuk Hybrid Mobile Apps Berbasis Cordova</a></h3>
+      <p>Introduces Google Firebase as a backend service platform for hybrid mobile applications built with Apache Cordova. Explores Firebase Realtime Database, Authentication, and integration patterns for Android/iOS cross-platform development. Widely cited — referenced in 15+ subsequent papers.</p>
+      <div class="research-footer">
+        <div class="research-tags">
+          <span class="research-tag">Firebase</span>
+          <span class="research-tag">Hybrid Mobile</span>
+          <span class="research-tag">Cordova</span>
+          <span class="research-tag">Android</span>
+          <span class="research-tag">Cross-Platform</span>
+        </div>
+        <a href="https://www.researchgate.net/publication/367733572_Pengenalan_Google_Firebase_Untuk_Hybrid_Mobile_Apps_Berbasis_Cordova" target="_blank" rel="noopener" class="research-link">View on ResearchGate →</a>
+      </div>
+    </div>
+
+    <div style="height:32px"></div>
+
+    <!-- Profile Links Row -->
+    <div class="research-profile-links">
+      <a href="https://scholar.google.co.id/citations?user=qRojFF4AAAAJ&hl=en" target="_blank" rel="noopener" class="research-profile-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Google Scholar
+      </a>
+      <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6643533" target="_blank" rel="noopener" class="research-profile-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        SINTA
+      </a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=56703365400" target="_blank" rel="noopener" class="research-profile-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Scopus
+      </a>
+      <a href="https://www.researchgate.net/profile/Mirza-Ilhami-2" target="_blank" rel="noopener" class="research-profile-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        ResearchGate
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PROJECTS ──────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Work</span>
+      <h2>Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+      <div class="project-card project-skel">
+        <div class="project-header">
+          <div class="project-icon" style="background:var(--color-canvas-subtle);width:40px;height:40px;border-radius:10px;"></div>
+        </div>
+        <div class="skel-line" style="height:14px;border-radius:4px;background:var(--color-canvas-subtle);margin:12px 0 6px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:80%;animation:shimmer 1.4s ease-in-out infinite;"></div>
+        <div class="skel-line" style="height:12px;border-radius:4px;background:var(--color-canvas-subtle);width:65%;margin-top:4px;animation:shimmer 1.4s ease-in-out infinite;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BLOG ──────────────────────────────────────────────────── -->
+<section id="blog">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Writing</span>
+      <h2>Blog & Articles</h2>
+      <div class="section-line"></div>
+    </div>
+    <div id="blog-grid" class="blog-grid" data-limit="2"></div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="/blog/" class="btn btn-secondary">View All Posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ───────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Contact</span>
+      <h2>Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-intro">
+        <h3>Let's build something<br>great together.</h3>
+        <p>Whether you're looking to collaborate on an AI project, discuss a research opportunity, need a senior engineer for your team, or just want to talk tech — I'm always happy to connect.</p>
+        <div class="social-links">
+          <div class="social-link" onclick="window.open('https://github.com/mirzailhami','_blank')" role="link" tabindex="0" style="cursor:pointer">
+            <div class="social-icon" style="background:rgba(88,166,255,0.1);">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="var(--color-fg-default)"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </div>
+            <div class="social-info">
+              <span>GitHub</span>
+              <small>@mirzailhami</small>
+            </div>
+            <span class="social-arrow">→</span>
+          </div>
+          <div class="social-link" onclick="window.open('https://linkedin.com/in/mirzailhami','_blank')" role="link" tabindex="0" style="cursor:pointer">
+            <div class="social-icon" style="background:rgba(10,102,194,0.15);">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="#0a66c2"><path d="M0 1.146C0 .514.526 0 1.175 0h13.65C15.474 0 16 .514 16 1.146v13.708c0 .632-.526 1.146-1.175 1.146H1.175C.526 16 0 15.486 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+            </div>
+            <div class="social-info">
+              <span>LinkedIn</span>
+              <small>Mirza Ilhami</small>
+            </div>
+            <span class="social-arrow">→</span>
+          </div>
+          <div class="social-link" onclick="window.open('https://profiles.topcoder.com/mirzailhami','_blank')" role="link" tabindex="0" style="cursor:pointer">
+            <div class="social-icon" style="background:rgba(41,171,226,0.15);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Topcoder icon</title><path d="M20.514 16.517c.192-.026.376-.112.542-.21.345-.201.646-.473.936-.75.226-.214.444-.436.653-.67.12-.146.256-.296.376-.451.105-.143.21-.285.315-.436.076-.115.15-.23.212-.35.33-.598.601-1.336.361-2.016-.031-.094-.076-.185-.121-.27-.091-.154-.211-.291-.331-.413-.21-.201-.468-.36-.723-.489-.376-.188-.781-.313-1.201-.406-.603-.137-1.205-.201-1.821-.226-.842-.041-1.684-.006-2.512.076.105.109.196.225.301.338.195.226.392.467.571.723.227.3.437.631.647.962.602.992 1.054 2.075 1.383 3.173.105.33.182.662.255 1.008.031.12.048.256.077.391l.08.016zm-18.585-.151c.052-.204.105-.412.16-.616.08-.301.176-.6.266-.896.069-.217.15-.429.227-.645.09-.225.185-.45.277-.676.033-.076.061-.153.098-.23.102-.215.211-.427.322-.637.135-.242.256-.481.391-.707.18-.316.377-.602.586-.888l.016-.015c-.331-.016-.677-.016-1.008-.016-.24 0-.496.016-.736.045-.166.016-.33.031-.496.061-.121.016-.24.045-.361.075-.586.15-1.248.421-1.533 1.007-.031.076-.061.151-.091.242-.032.12-.047.27-.047.406 0 .211.045.421.089.632.091.315.242.617.393.902.285.496.646.962 1.022 1.398l.481.525-.056.033zm18.151-.045c-.492-2.302-1.546-4.532-3.194-6.236l-.083-.086-.041-.04c-.2.014-.399.045-.603.074-2.154.332-4.26.918-6.285 1.715.168.045.336.09.507.15.706.226 1.413.466 2.108.723 2.421.902 4.755 2.029 6.998 3.322l.586.347.007.031zm-17.706-.139l.873-.843c.15-.143.15-.142.301-.28 1.533-1.354 3.318-2.375 5.18-3.217-.275-.076-.549-.136-.824-.195-1.053-.241-2.113-.437-3.188-.527-.084.121-.166.227-.247.346-.181.271-.354.527-.517.813-.15.24-.271.481-.392.723-.104.195-.21.391-.286.586-.029.045-.045.105-.06.15-.091.226-.195.451-.286.677-.074.181-.135.36-.195.541-.09.286-.18.557-.255.843-.046.15-.091.301-.12.45l.016-.067zm6.914-4.587c.21-.091.417-.175.628-.255.233-.094.466-.182.7-.269 1.023-.376 2.061-.692 3.113-.947.873-.211 1.744-.376 2.633-.511l.06-.016c-.241-.226-.496-.421-.752-.617-.481-.36-1.007-.662-1.563-.902-1.295-.556-2.723-.736-4.105-.48-.753.134-1.491.39-2.167.752-1.067.571-2 1.383-2.768 2.315l-.03.016.466.044.572.076c.813.135 1.594.301 2.391.48.301.076.587.151.873.227l-.051.087z"></path></g></svg>
+            </div>
+            <div class="social-info">
+              <span>Topcoder</span>
+              <small>mirzailhami</small>
+            </div>
+            <span class="social-arrow">→</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project or idea..."></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="handleContact()" style="width:100%;justify-content:center;">
+            Send Message →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────────── -->
+<footer>
+  <p>
+    Built with ❤️ by AI &middot; Supervised by <a href="https://github.com/mirzailhami">Mirza Ilhami</a> &middot;
+    Hosted on <a href="https://pages.github.com">GitHub Pages</a> &middot;
+    <a href="https://github.com/mirzailhami/mirzailhami.github.io">View Source</a>
+  </p>
+</footer>
+
+<script src="/assets/script.js"></script>
+</body>
+</html>
