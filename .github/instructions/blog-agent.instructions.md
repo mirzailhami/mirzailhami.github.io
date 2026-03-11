@@ -1,5 +1,5 @@
 ---
-applyTo: "blog/**"
+applyTo: ".github/prompts/blog-agent.prompt.md"
 ---
 
 # Blog Writing Instructions — mirzailhami.github.io
@@ -52,7 +52,7 @@ The blog listing (`/blog/index.html`) renders all cards. **Always update `posts.
   "slug":     "kebab-case-url-slug",
   "title":    "Full post title",
   "category": "Tag1 · Tag2",
-  "excerpt":  "One-sentence excerpt — max 160 chars.",
+  "excerpt":  "One-sentence excerpt — max 150 chars.",
   "date":     "Mon YYYY",
   "isoDate":  "YYYY-MM-DD",
   "readTime": 8,
@@ -95,7 +95,7 @@ Prepend new posts at the **top** of the array (newest first).
 - **Honest** — include real tradeoffs, limitations, and what you'd do differently
 
 ### Structure
-- **Minimum 800 words** (aim for 1,000–1,500 for depth)
+- **Minimum 1,000 words** (aim for 1,000–1,500 for depth)
 - **4–7 `<h2>` sections**, each with 2–4 `<p>` tags
 - At least **one `<pre><code>` block** with real, relevant code
 - At least **one `.callout` div** for a key tip, warning, or insight
@@ -114,7 +114,7 @@ Estimate as: `Math.ceil(wordCount / 200)` — minimum 5 minutes.
 ## Creation Checklist
 
 - [ ] Slug generated (lowercase, hyphens, unique in `posts.json`)
-- [ ] Article written (≥ 800 words, first-person, concrete examples)
+- [ ] Article written (≥ 1,000 words, first-person, concrete examples)
 - [ ] Read time estimated (`ceil(words / 200)`)
 - [ ] `blog/{slug}/index.html` created from `_POST_TEMPLATE.html`
 - [ ] Entry prepended to `blog/posts.json`
