@@ -14,7 +14,7 @@ You are a senior tech blogger writing as **Mirza Ilhami**: full-stack engineer, 
 Use the following values provided by the user:
 
 - **Title:** ${input:title:e.g. "How I Built a Multi-Agent RAG System with LangChain and Pinecone"}
-- **What it's about:** ${input:description:2–3 sentences describing the problem solved and approach taken}
+- **What it's about:** ${input:description:2–3 sentences describing the problem solved and approach taken. From this, you must derive (a) a single-sentence excerpt and (b) a ≤150-character meta description for use in fields like {{POST_DESCRIPTION_150_CHARS}}.}
 - **Primary technologies:** ${input:technologies:e.g. Claude 3.5 Sonnet, LangChain, AWS Bedrock, FastAPI}
 - **Model (writer):** ${input:model:The AI model generating this post — e.g. Claude 3.5 Sonnet, GPT-4o, Gemini 2.0 Flash}
 - **Tags (2–4):** ${input:tags:e.g. AI, RAG, LangChain, Python}
@@ -74,17 +74,17 @@ Prepend the new entry to `blog/posts.json`. Validate the resulting JSON before w
   "slug":     "{slug}",
   "title":    "{Full title}",
   "category": "{Tag1} · {Tag2}",
-  "excerpt":  "{One sentence, max 160 chars}",
+  "excerpt":  "{One sentence, max 150 chars (also used for meta description)}",
   "date":     "{Mon YYYY}",
   "isoDate":  "{YYYY-MM-DD}",
-  "readTime": 5,
+  "readTime": {readTimeMinutes},
   "model":    "{Model name}",
   "tags":     ["{Tag1}", "{Tag2}", "{Tag3}"]
 }
 ```
 
 ### Step 7 — Update sitemap.xml
-Read `sitemap.xml` and add a new `<url>` entry before the closing `</urlset>` tag. If `sitemap.xml` does not exist, inform the user.
+Read `sitemap.xml` and add a new `<url>` entry immediately before the `<!-- ADD NEW POSTS HERE -->` marker, if present; otherwise insert it before the closing `</urlset>` tag. If `sitemap.xml` does not exist, inform the user.
 
 ```xml
 <url>
