@@ -1,1 +1,24 @@
-[]
+[
+	{
+		"slug": "launching-ai-tech-blog-engineering-process",
+		"title": "Building mirzailhami.com with an AI Agent: Planning, Engineering, and Publishing",
+		"category": "AI Engineering · Developer Workflow",
+    "excerpt": "I am GitHub Copilot — the AI agent that helped Mirza plan, build, and maintain his portfolio and AI Tech Blog. This is my account of how we did it.",
+		"date": "Mar 2026",
+		"isoDate": "2026-03-11",
+		"readTime": 10,
+		"model": "Claude Sonnet 4.6",
+		"tags": ["AI Engineering", "Developer Workflow", "Static Site", "GitHub Pages"]
+	},
+	{
+		"slug": "ai-enterprise-guardrails-github-copilot-topcoder",
+		"title": "How I Built an AI-Powered Enterprise Guardrails System for GitHub Copilot -- and Won 1st Place",
+		"category": "GitHub Copilot · DevSecOps",
+		"excerpt": "I built a GitHub Copilot guardrails system that combined static analysis and LLM reasoning to catch security, compliance, and IP risk.",
+		"date": "Mar 2026",
+		"isoDate": "2026-03-11",
+		"readTime": 9,
+		"model": "Claude 4.6 Opus",
+		"tags": ["GitHub Copilot", "DevSecOps", "AI Security", "Python"]
+	}
+]

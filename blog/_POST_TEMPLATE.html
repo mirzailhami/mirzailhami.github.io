@@ -10,13 +10,13 @@
   <title>{{POST_TITLE}} — Mirza Ilhami</title>
   <meta name="description" content="{{POST_DESCRIPTION_150_CHARS}}" />
   <meta name="author" content="Mirza Ilhami" />
-  <link rel="canonical" href="https://mirzailhami.github.io/blog/{{POST_SLUG}}/" />
+  <link rel="canonical" href="https://mirzailhami.com/blog/{{POST_SLUG}}/" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://mirzailhami.github.io/blog/{{POST_SLUG}}/" />
+  <meta property="og:url" content="https://mirzailhami.com/blog/{{POST_SLUG}}/" />
   <meta property="og:title" content="{{POST_TITLE}} — Mirza Ilhami" />
   <meta property="og:description" content="{{POST_DESCRIPTION_150_CHARS}}" />
-  <meta property="og:image" content="https://mirzailhami.github.io/assets/og-image.png" />
+  <meta property="og:image" content="https://mirzailhami.com/assets/og-image.png" />
   <meta property="article:author" content="Mirza Ilhami" />
   <meta property="article:published_time" content="{{ISO_DATE}}" />
   <meta property="article:tag" content="{{TAG_1}}" />
@@ -33,27 +33,26 @@
     "@type": "BlogPosting",
     "headline": "{{POST_TITLE}}",
     "description": "{{POST_DESCRIPTION_150_CHARS}}",
-    "url": "https://mirzailhami.github.io/blog/{{POST_SLUG}}/",
+    "url": "https://mirzailhami.com/blog/{{POST_SLUG}}/",
     "datePublished": "{{ISO_DATE}}",
     "dateModified": "{{ISO_DATE}}",
     "author": {
       "@type": "Person",
       "name": "Mirza Ilhami",
-      "url": "https://mirzailhami.github.io"
+      "url": "https://mirzailhami.com"
     },
     "publisher": {
       "@type": "Person",
       "name": "Mirza Ilhami",
-      "url": "https://mirzailhami.github.io"
+      "url": "https://mirzailhami.com"
     },
     "keywords": ["{{TAG_1}}", "{{TAG_2}}", "{{TAG_3}}"],
-    "image": "https://mirzailhami.github.io/assets/og-image.png"
+    "image": "https://mirzailhami.com/assets/og-image.png"
   }
   </script>
   <!-- ════════════════════════════════════════════ -->
 
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
   <!-- GitHub Primer CSS -->
   <link rel="stylesheet" href="https://unpkg.com/@primer/css@21.0.7/dist/primer.css" />
@@ -63,124 +62,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/style.css" />
-
-  <style>
-    /* ARTICLE */
-    article { max-width: 720px; margin: 0 auto; padding: calc(var(--nav-height) + 48px) 24px 96px; }
-
-    .post-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border-muted); }
-    .post-cats { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-    .post-cat {
-      font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
-      color: var(--color-accent-fg); background: rgba(31,111,235,0.1);
-      border: 1px solid rgba(88,166,255,0.2); border-radius: 4px; padding: 3px 10px;
-    }
-    h1.post-title {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 5vw, 42px);
-      font-weight: 800; letter-spacing: -1.5px;
-      line-height: 1.15; color: var(--color-fg-default);
-      margin-bottom: 16px;
-    }
-    .post-excerpt { font-size: 18px; color: var(--color-fg-muted); line-height: 1.6; margin-bottom: 20px; }
-    .post-meta-bar {
-      display: flex; align-items: center; gap: 12px;
-      font-size: 13px; color: var(--color-fg-subtle); flex-wrap: wrap;
-    }
-    .post-author { display: flex; align-items: center; gap: 8px; }
-    .author-avatar {
-      width: 28px; height: 28px; border-radius: 50%;
-      background: linear-gradient(135deg, #1f6feb, #a371f7);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 12px; font-weight: 700; color: white;
-    }
-
-    /* CONTENT TYPOGRAPHY */
-    .post-content { font-size: 16px; line-height: 1.85; color: var(--color-fg-default); }
-    .post-content h2 {
-      font-family: var(--font-display);
-      font-size: 24px; font-weight: 700;
-      color: var(--color-fg-default);
-      margin: 48px 0 16px; letter-spacing: -0.5px;
-      padding-top: 48px; border-top: 1px solid var(--color-border-muted);
-    }
-    .post-content h3 {
-      font-family: var(--font-display);
-      font-size: 18px; font-weight: 600;
-      color: var(--color-fg-default);
-      margin: 32px 0 12px;
-    }
-    .post-content p { margin-bottom: 20px; color: var(--color-fg-muted); }
-    .post-content strong { color: var(--color-fg-default); font-weight: 600; }
-    .post-content a { color: var(--color-accent-fg); text-decoration: underline; text-underline-offset: 3px; }
-    .post-content a:hover { color: #79c0ff; }
-    .post-content ul, .post-content ol { padding-left: 24px; margin-bottom: 20px; color: var(--color-fg-muted); }
-    .post-content li { margin-bottom: 8px; line-height: 1.7; }
-    .post-content blockquote {
-      border-left: 3px solid var(--color-accent-emphasis);
-      padding: 12px 20px; margin: 24px 0;
-      background: rgba(31,111,235,0.06);
-      border-radius: 0 8px 8px 0;
-      font-style: italic; color: var(--color-fg-muted);
-    }
-    .post-content pre {
-      background: var(--color-canvas-subtle);
-      border: 1px solid var(--color-border-muted);
-      border-radius: 8px; padding: 20px;
-      overflow-x: auto; margin: 24px 0;
-      font-family: var(--font-mono); font-size: 14px;
-      line-height: 1.6;
-    }
-    .post-content code {
-      font-family: var(--font-mono); font-size: 13px;
-      background: var(--color-canvas-subtle);
-      border: 1px solid var(--color-border-muted);
-      border-radius: 4px; padding: 2px 6px;
-      color: #ff7b72;
-    }
-    .post-content pre code {
-      background: none; border: none; padding: 0;
-      color: var(--color-fg-default); font-size: 14px;
-    }
-    .post-content img {
-      width: 100%; border-radius: 8px;
-      border: 1px solid var(--color-border-muted);
-      margin: 24px 0;
-    }
-    .post-content hr { border: none; border-top: 1px solid var(--color-border-muted); margin: 40px 0; }
-
-    /* CALLOUT */
-    .callout {
-      background: rgba(31,111,235,0.08);
-      border: 1px solid rgba(88,166,255,0.2);
-      border-radius: 8px; padding: 16px 20px;
-      margin: 24px 0; display: flex; gap: 12px;
-    }
-    .callout-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
-    .callout p { margin: 0; color: var(--color-fg-muted); }
-
-    /* POST FOOTER */
-    .post-footer {
-      margin-top: 64px; padding-top: 32px;
-      border-top: 1px solid var(--color-border-muted);
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 16px;
-    }
-    .tag-list { display: flex; gap: 8px; flex-wrap: wrap; }
-    .tag {
-      font-size: 12px; font-family: var(--font-mono);
-      padding: 4px 10px; border-radius: 6px;
-      background: rgba(88,166,255,0.08);
-      border: 1px solid rgba(88,166,255,0.15);
-      color: var(--color-accent-fg);
-    }
-    .back-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      color: var(--color-fg-muted); font-size: 14px; text-decoration: none;
-      transition: color 0.15s ease;
-    }
-    .back-link:hover { color: var(--color-accent-fg); }
-  </style>
+  <link rel="stylesheet" href="/assets/blog-post.css" />
+  <script src="/assets/blog-post.js" defer></script>
 </head>
 <body>
 
@@ -194,13 +77,13 @@
       <li><a href="/#about" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/></svg> About</a></li>
       <li><a href="/#research" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"/></svg> Research</a></li>
       <li><a href="/#projects" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg> Projects</a></li>
-      <li><a href="/blog/" class="active" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm2.096 5.925-2.475-2.474-5.59 5.59L4.1 11.544l.981-.35 5.93-5.843Zm1.414-4.512-.48-.517a.25.25 0 0 0-.354 0L12.61 3.39l2.474 2.475.984-.984a.25.25 0 0 0 0-.354Z"/></svg> Blog</a></li>
+      <li><a href="/blog/" class="active" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink:0"><path d="M5 2.75A.75.75 0 0 1 5.75 2h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 7.25Zm1.5.75v3h3v-3Zm-4 1A.75.75 0 0 1 3.25 5v.5a.75.75 0 0 1-1.5 0V5a.75.75 0 0 1 .75-.75Zm11 0a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0V5a.75.75 0 0 1 .75-.75ZM2.75 9.75a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75Zm10.5 0a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75ZM6.5 9.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75Zm3 0a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75ZM6.5 0a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5A.75.75 0 0 1 6.5 0Zm3 0a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5A.75.75 0 0 1 9.5 0Z"/></svg> AI Tech Blog</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:8px;">
       <a href="/#contact" class="nav-icon-btn" title="Contact"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 8.88Z"/></svg></a>
       <a href="https://github.com/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn" title="GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
       <a href="https://linkedin.com/in/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .514.526 0 1.175 0h13.65C15.474 0 16 .514 16 1.146v13.708c0 .632-.526 1.146-1.175 1.146H1.175C.526 16 0 15.486 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
-      <a href="https://profiles.topcoder.com/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn nav-tc-btn" title="Topcoder"><img src="/assets/topcoder.svg" width="16" height="16" alt="Topcoder" style="display:block" /></a>
+      <a href="https://profiles.topcoder.com/mirzailhami" target="_blank" rel="noopener" class="nav-icon-btn nav-tc-btn" title="Topcoder"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" xmlns="http://www.w3.org/2000/svg"><title>Topcoder icon</title><path d="M20.514 16.517c.192-.026.376-.112.542-.21.345-.201.646-.473.936-.75.226-.214.444-.436.653-.67.12-.146.256-.296.376-.451.105-.143.21-.285.315-.436.076-.115.15-.23.212-.35.33-.598.601-1.336.361-2.016-.031-.094-.076-.185-.121-.27-.091-.154-.211-.291-.331-.413-.21-.201-.468-.36-.723-.489-.376-.188-.781-.313-1.201-.406-.603-.137-1.205-.201-1.821-.226-.842-.041-1.684-.006-2.512.076.105.109.196.225.301.338.195.226.392.467.571.723.227.3.437.631.647.962.602.992 1.054 2.075 1.383 3.173.105.33.182.662.255 1.008.031.12.048.256.077.391l.08.016zm-18.585-.151c.052-.204.105-.412.16-.616.08-.301.176-.6.266-.896.069-.217.15-.429.227-.645.09-.225.185-.45.277-.676.033-.076.061-.153.098-.23.102-.215.211-.427.322-.637.135-.242.256-.481.391-.707.18-.316.377-.602.586-.888l.016-.015c-.331-.016-.677-.016-1.008-.016-.24 0-.496.016-.736.045-.166.016-.33.031-.496.061-.121.016-.24.045-.361.075-.586.15-1.248.421-1.533 1.007-.031.076-.061.151-.091.242-.032.12-.047.27-.047.406 0 .211.045.421.089.632.091.315.242.617.393.902.285.496.646.962 1.022 1.398l.481.525-.056.033zm18.151-.045c-.492-2.302-1.546-4.532-3.194-6.236l-.083-.086-.041-.04c-.2.014-.399.045-.603.074-2.154.332-4.26.918-6.285 1.715.168.045.336.09.507.15.706.226 1.413.466 2.108.723 2.421.902 4.755 2.029 6.998 3.322l.586.347.007.031zm-17.706-.139l.873-.843c.15-.143.15-.142.301-.28 1.533-1.354 3.318-2.375 5.18-3.217-.275-.076-.549-.136-.824-.195-1.053-.241-2.113-.437-3.188-.527-.084.121-.166.227-.247.346-.181.271-.354.527-.517.813-.15.24-.271.481-.392.723-.104.195-.21.391-.286.586-.029.045-.045.105-.06.15-.091.226-.195.451-.286.677-.074.181-.135.36-.195.541-.09.286-.18.557-.255.843-.046.15-.091.301-.12.45l.016-.067zm6.914-4.587c.21-.091.417-.175.628-.255.233-.094.466-.182.7-.269 1.023-.376 2.061-.692 3.113-.947.873-.211 1.744-.376 2.633-.511l.06-.016c-.241-.226-.496-.421-.752-.617-.481-.36-1.007-.662-1.563-.902-1.295-.556-2.723-.736-4.105-.48-.753.134-1.491.39-2.167.752-1.067.571-2 1.383-2.768 2.315l-.03.016.466.044.572.076c.813.135 1.594.301 2.391.48.301.076.587.151.873.227l-.051.087z"></path></svg></a>
       <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -208,6 +91,12 @@
     </div>
   </div>
 </nav>
+
+<div class="post-layout">
+  <aside class="post-sidebar" aria-label="Table of contents">
+    <p class="post-sidebar-title">Contents</p>
+    <ol class="post-toc-list" id="postTocList"></ol>
+  </aside>
 
 <article>
   <!-- ─── POST HEADER ──────────────────────────── -->
@@ -228,6 +117,7 @@
       <span>·</span>
       <span>{{READ_TIME}} min read</span>
     </div>
+    <p class="post-ai-disclaimer"><strong>Disclosure:</strong> This article was AI-generated using {{MODEL_NAME}} and published with human review by Mirza Ilhami.</p>
   </header>
 
   <!-- ─── POST CONTENT ─────────────────────────── -->
@@ -268,6 +158,34 @@
 
   </div>
 
+  <section class="post-references" id="references">
+    <h2>References</h2>
+    <ul>
+      {{REFERENCES_LIST_ITEMS}}
+    </ul>
+  </section>
+
+  <section class="post-comments" id="comments">
+    <h2>Discussion</h2>
+    <p class="post-comments-intro">Comment using your GitHub account. Discussions for each article are mapped automatically from the page URL.</p>
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="mirzailhami/mirzailhami.github.io"
+      data-repo-id="R_kgDORjjqRg"
+      data-category="General"
+      data-category-id="DIC_kwDORjjqRs4C4MQv"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+
   <!-- ─── POST FOOTER ──────────────────────────── -->
   <div class="post-footer">
     <div class="tag-list">
@@ -278,6 +196,7 @@
     <a href="/blog/" class="back-link">← All Posts</a>
   </div>
 </article>
+</div>
 
 <footer>
   <p>

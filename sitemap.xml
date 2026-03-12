@@ -2,17 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://mirzailhami.github.io/</loc>
+    <loc>https://mirzailhami.com/</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://mirzailhami.github.io/blog/</loc>
+    <loc>https://mirzailhami.com/blog/</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mirzailhami.com/blog/ai-enterprise-guardrails-github-copilot-topcoder/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mirzailhami.com/blog/launching-ai-tech-blog-engineering-process/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- ADD NEW POSTS HERE -->

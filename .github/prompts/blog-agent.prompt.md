@@ -26,8 +26,8 @@ Read before doing anything else:
 1. Read `blog/_POST_TEMPLATE.html`. Stop and inform the user if missing.
 2. Read `blog/posts.json`. If missing, treat the posts array as empty.
 3. Derive slug (lowercase, hyphens, ≤ 60 chars). Append `-2` if conflict. Use today's date if none provided. Estimate read time: `ceil(wordCount / 200)`, minimum 5.
-4. Write the article following the voice, structure, and standards in `blog-agent.instructions.md`.
-5. Create `blog/{slug}/index.html` — fill every `{{PLACEHOLDER}}` using the placeholder table in `blog-agent.instructions.md`. Scan for any remaining `{{` before saving.
+4. Write the article following the voice, structure, and standards in `blog-agent.instructions.md`. Make sure the article uses clear `<h2>` headings so the generated table of contents is useful.
+5. Create `blog/{slug}/index.html` — fill every `{{PLACEHOLDER}}` using the placeholder table in `blog-agent.instructions.md`, including `{{REFERENCES_LIST_ITEMS}}` with relevant link items. Scan for any remaining `{{` before saving.
 6. Prepend new entry to `blog/posts.json`. Validate JSON before writing.
 7. Add `<url>` to `sitemap.xml` before `<!-- ADD NEW POSTS HERE -->` marker if present, otherwise before `</urlset>`. Inform user if file missing.
 
@@ -36,4 +36,4 @@ Read before doing anything else:
 - ✅ `blog/{slug}/index.html` — no `{{PLACEHOLDER}}` remaining
 - ✅ `blog/posts.json` — new entry at index 0, valid JSON
 - ✅ `sitemap.xml` — new `<url>` added
-- 📖 `https://mirzailhami.github.io/blog/{slug}/`
+- 📖 `https://mirzailhami.com/blog/{slug}/`
